@@ -63,7 +63,7 @@ export default function Hero() {
               Репетитор по математике для 5–9 классов
             </span>
             <br />
-            <span className="text-slate-800">и подготовка к ОГЭ (9 класс)</span>
+            <span className="text-slate-800">и подготовка к ОГЭ</span>
           </h1>
 
           {/* Subheading */}
