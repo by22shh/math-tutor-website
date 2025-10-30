@@ -27,7 +27,7 @@ export default function Pricing() {
               Стоимость занятий
             </h2>
             <p className="text-xl text-slate-600">
-              Прозрачное ценообразование без скрытых платежей
+              Индивидуальные занятия для 5–9 классов и подготовка к ОГЭ. Прозрачные цены.
             </p>
           </div>
 
@@ -60,6 +60,10 @@ export default function Pricing() {
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <span className="text-slate-700">Индивидуальный план обучения</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-slate-700">Рекомендации по 5–9 классам / ОГЭ</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -100,6 +104,10 @@ export default function Pricing() {
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                   <span className="text-white">Индивидуальные занятия</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                  <span className="text-white">Для 5–9 классов</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
@@ -155,6 +163,10 @@ export default function Pricing() {
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                   <span className="text-white">Индивидуальные занятия</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                  <span className="text-white">Для 5–9 классов</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />

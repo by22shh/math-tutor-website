@@ -80,8 +80,9 @@ export default function About() {
               <div className="space-y-4 text-lg text-slate-600 mb-8">
                 <p>
                   Меня зовут <strong className="text-slate-800">Никитина София Дмитриевна</strong>, и я
-                  профессиональный репетитор по математике с многолетним опытом подготовки
-                  учеников к ОГЭ.
+                  профессиональный репетитор по математике. Работаю с учениками
+                  5–9 классов, помогаю подтянуть школьную программу и готовлю
+                  к ОГЭ для 9 класса.
                 </p>
                 <p>
                   Я окончила школу с <strong className="text-slate-800 bg-gradient-to-r from-amber-100 to-orange-100 px-1 rounded">золотой медалью</strong>,

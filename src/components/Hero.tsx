@@ -51,7 +51,7 @@ export default function Hero() {
           >
             <GraduationCap className="w-4 h-4 text-orange-600" />
             <span className="text-sm font-medium text-slate-700">
-              Профессиональная подготовка к ОГЭ
+              Математика 5–9 классы • Подготовка к ОГЭ
             </span>
           </div>
 
@@ -60,19 +60,18 @@ export default function Hero() {
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-orange-900 to-amber-900">
-              Подготовка к ОГЭ
+              Репетитор по математике для 5–9 классов
             </span>
             <br />
-            <span className="text-slate-800">по математике</span>
+            <span className="text-slate-800">и подготовка к ОГЭ (9 класс)</span>
           </h1>
 
           {/* Subheading */}
           <p className={`text-xl sm:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            Индивидуальные онлайн и офлайн занятия с опытным преподавателем.
-            <br />
-            Гарантированный результат и высокие баллы на экзамене.
+            Индивидуальные онлайн и офлайн занятия по школьной программе для 5–9 классов
+            и целевая подготовка к ОГЭ для 9 класса.
           </p>
 
           {/* Key points */}

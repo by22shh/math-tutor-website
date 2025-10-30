@@ -73,7 +73,7 @@ export default function Contact() {
           {/* CTA */}
           <div className="bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl p-8 sm:p-12">
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">
-              Готовы начать подготовку к ОГЭ?
+              Готовы подтянуть математику или начать подготовку к ОГЭ?
             </h3>
             <p className="text-lg mb-8 opacity-90">
               Запишитесь на бесплатное первое занятие прямо сейчас
