@@ -1,0 +1,14 @@
+<FilesMatch "\.php$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+        Header set Access-Control-Allow-Headers "Content-Type"
+    </IfModule>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Allow POST to PHP files
+<Limit POST>
+    Order Allow,Deny
+    Allow from all
+</Limit>
