@@ -92,7 +92,7 @@ export default function Contact() {
           {/* Footer */}
           <div className="mt-16 pt-8 border-t border-white/10">
             <p className="text-slate-400">
-              © 2025 Никитина София Дмитриевна. Репетитор по математике
+              © 2026 Никитина София Дмитриевна. Репетитор по математике
             </p>
           </div>
         </div>
