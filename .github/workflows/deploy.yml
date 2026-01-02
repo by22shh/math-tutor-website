@@ -22,14 +22,6 @@ jobs:
       - name: Build project
         run: bun run build
 
-      - name: Inject Telegram Secrets
-        run: |
-          sed -i 's/TELEGRAM_BOT_TOKEN_PLACEHOLDER/${{ secrets.TELEGRAM_BOT_TOKEN }}/g' public/handler.php
-          sed -i 's/TELEGRAM_CHAT_ID_PLACEHOLDER/${{ secrets.TELEGRAM_CHAT_ID }}/g' public/handler.php
-          # Копируем в корень сборки
-          cp public/handler.php out/handler.php
-          cp public/.htaccess out/.htaccess
-
       - name: Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:

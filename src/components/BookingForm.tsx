@@ -22,7 +22,10 @@ export default function BookingForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/handler.php", {
+      // Замените на URL вашего Cloudflare Worker после деплоя
+      const WORKER_URL = "https://dawn-dew-f1eb.by22shh.workers.dev";
+
+      const response = await fetch(WORKER_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
