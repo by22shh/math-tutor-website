@@ -2,20 +2,25 @@ name: Deploy to Reg.ru
 on:
   push:
     branches:
-      - main # Убедитесь, что ваша основная ветка называется main (или замените на master)
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: Install dependencies
-        run: npm install
+        run: bun install --frozen-lockfile
 
       - name: Build project
-        run: npm run build
+        run: bun run build
 
       - name: Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -23,7 +28,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Путь к папке со сборкой (обычно dist или build)
-          local-dir: ./dist/ 
-          # Путь на сервере Reg.ru (слэш в начале НЕ нужен, так как корень / уже задан)
+          local-dir: ./out/
           server-dir: www/xn--e1aajycefnb.online/
