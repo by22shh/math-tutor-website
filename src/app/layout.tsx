@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Никитина София Дмитриевна" }],
   creator: "Никитина София Дмитриевна",
   publisher: "Никитина София Дмитриевна",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "ru_RU",
