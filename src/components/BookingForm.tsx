@@ -22,7 +22,7 @@ export default function BookingForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/booking.php", {
+      const response = await fetch("/handler.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
